@@ -1,0 +1,69 @@
+/* SketchUp YARD overlay: typography + signature colors from yard-sketchup (MIT).
+   No Trimble / SketchUp trademarks. */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4d5259;
+}
+h1, h2, h3, h4, h5, h6, .tags .tag_title, .tags .examples .tag_title {
+  font-weight: normal;
+}
+a, a:visited,
+#content a, #content a:visited,
+#search a, #search a:visited,
+#menu a, #menu a:visited,
+#footer a, #footer a:visited {
+  color: #e72b3d;
+}
+a:hover, a:focus,
+#content a:hover, #content a:focus {
+  color: #b11423;
+}
+.summary_desc .object_link a,
+.docstring .object_link a,
+.object_link a {
+  background: #f9f3f3;
+}
+#main { font-size: 13px; }
+#content .signature {
+  background: #6B6B6B;
+  color: #fff;
+  border: none;
+}
+#content .signature a {
+  color: #FF8080;
+  background: none;
+}
+.summary_desc .object_link a,
+#content .signature,
+.summary .summary_signature,
+.docstring pre.code,
+.tags pre.example {
+  border-radius: 2px;
+}
+#os3d-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1030;
+  height: 48px; box-sizing: border-box;
+  background: #f9f9fb; color: #363545;
+  box-shadow: 1px 1px 6px #35393e47;
+  display: flex; align-items: center; padding: 0 18px; gap: 16px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#os3d-header .name {
+  font-size: 16px; font-weight: 600; color: #363545; text-decoration: none;
+}
+#os3d-header .sub { color: #6b6f76; font-size: 13px; }
+#su-content {
+  background: #eef;
+  width: 100%;
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  display: flex;
+}
+#su-content .nav_wrap { height: 100%; }
+#su-content #main { height: 100%; overflow: auto; background: #fff; }
+html, body { background-color: #f9f9fb; }
+.full_list .nav_link,
+.full_list .object_link,
+.full_list_nav button { color: #e72b3d; }
+#nav.toc .full_list li.current > .item { background: #f9e6e8; }
